@@ -44,7 +44,6 @@ def getModeline():
     modeline = os.popen(command).read().split("Modeline ")
     modeline = modeline[1].split("\n")[0]
     model_name = modeline.split('"')[1]
-    # debug(command)
     return modeline, model_name
 
 
@@ -101,6 +100,7 @@ def activeScreen(modeline, mainScreen):
     if arg.primary:
         command += " --primary"
 
+    debug(command)
     error = os.popen(command).read()
     if len(error) > 0:
         print(error)
@@ -150,6 +150,6 @@ if __name__ == "__main__":
     newMode(modeline, model_name)
     addMode(model_name)
     activeScreen(modeline, mainScreen)
-    # shutDownScreen()
     getIP()
     shareScreen()
+    # shutDownScreen()

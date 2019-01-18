@@ -39,4 +39,11 @@ They're few parameters :
 ```
 ./SecondScreenAndroid.py -s right -r 1920x1080 -f 30 -p
 ```
-This command create a second screen on the right of your current screen, with a full HD resolution at 30 fps. 
+This command create a second screen on the right of your current screen, with a full HD resolution at 30 fps.
+
+## To fix
+
+* The second screen doesn't place itself at the right place. Top argument place it at the right.
+* x11vnc is a litle bit chatty, it may be better to setup a verbose mode.
+* Add an option to turn off the screen when you want
+* x11vnc doesn't always clip the right screen part
