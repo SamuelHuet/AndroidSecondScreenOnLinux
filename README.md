@@ -39,7 +39,7 @@ They're few parameters :
 ```
 ./SecondScreenAndroid.py -s right -r 1920x1080 -f 30 -p
 ```
-This command create a second screen on the right of your current screen, with a full HD resolution at 30 fps.
+This command create a second screen on the right of your current screen, with a full HD resolution at 30 fps and make it your primary screen
 
 ## To fix
 
